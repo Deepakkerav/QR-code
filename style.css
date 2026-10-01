@@ -16,10 +16,9 @@ body{
 }
 
 .container{
-    max-width:18rem;
+    max-width:min-content;
     background-color:var(--White) ;
     padding:min(0.25rem);
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,10 +28,31 @@ img,.container{
      border-radius: 2rem;
 }
 img{
-    width: 100%;
+    width:18rem;
     height: auto;
     text-align: center;
-    margin-left:min(1rem);
-    margin-right:min(1rem);
+    box-sizing: border-box;
+     position: relative;
+     top: 1em;
 
+
+}
+div{
+    img{
+        padding:0.5em;
+    }
+    padding:1em;
+    h1{
+       font-family:sans-serif;
+       font-size:large;
+       position: relative;
+       top: 1em;
+       box-sizing: border-box;
+       padding: 0.5em;
+       opacity: 0.9;
+    }
+    p{
+        opacity: 0.5;
+        padding: 1em;
+    }
 }
